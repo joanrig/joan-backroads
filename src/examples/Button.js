@@ -13,3 +13,13 @@ margin: 1rem;
 `
 
 export default Button
+
+
+// <Layout>
+// <h1>hello from tours page !!!!</h1>
+// <div>
+// <Button big>first button</Button>
+// <Button color="#f15205">second button</Button>
+// </div>
+
+// </Layout>

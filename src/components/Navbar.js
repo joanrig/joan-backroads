@@ -53,7 +53,7 @@ const Navbar = () => {
                                     key={index} 
                                     href={item.url}
                                     target="_blank"
-                                    rel="noopener"
+                                    rel="noopener noreferrer"
                                 >
                             {item.icon}
                         </a>

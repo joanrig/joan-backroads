@@ -1,18 +1,16 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Button from '../examples/Button'
+// import Button from '../examples/Button'
+import Header from '../examples/Header'
 
 const tours = () => {
     return (
         <Layout>
-            <h1>hello from tours page !!!!</h1>
-            <div>
-            <Button big>first button</Button>
-            <Button color="#f15205">second button</Button>
-            </div>
-            
+            hello from tours page!!
+            <Header />
         </Layout>
     )
 }
 
 export default tours
+
