@@ -8,15 +8,15 @@ const getImages = graphql`
 query Images {
     fixed: file(relativePath: {eq: "defaultBcg.jpeg"}) {
        childImageSharp {
-      fixed(width:300, height:400){
+      fixed(width:200, height:200, grayscale: true){
         ...GatsbyImageSharpFixed
       }
      }
     }
     fluid: file(relativePath: {eq: "blogBcg.jpeg"}){
       childImageSharp{
-        fluid{
-          ...GatsbyImageSharpFluid
+        fluid {
+          ...GatsbyImageSharpFluid_tracedSVG
         }
       }
     }
@@ -40,6 +40,7 @@ const Images = () => {
         
        <article>
            <h3>fluid image/ svg</h3>
+           <Img fluid={data.fluid.childImageSharp.fluid}/>
        </article>
    </Wrapper>
 }
@@ -55,6 +56,11 @@ const Wrapper = styled.div`
     }
     .basic{
         width: 100%;
+    }
+    @media (min-width:992px){
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      grid-column-gap:1rem;
     }
 
 `
