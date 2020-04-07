@@ -19,7 +19,7 @@ export default styled(StyledHero)`
     background:${props => props.home ? 'linear-gradient(rgba(63, 208, 212, 0.7)' : 'none'};
     background-position: center;
     background-size: cover;
-    opacity: 1!important;
+    opacity: 1 !important;
     display: flex;
     justify-content: center;
     align-items: center;
