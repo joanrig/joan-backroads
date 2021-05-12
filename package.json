@@ -30,7 +30,7 @@
     "gsap": "^3.2.6",
     "node": "^13.12.0",
     "node-sass": "^4.13.1",
-    "postcss": "^7.0.27",
+    "postcss": "^8.2.10",
     "postcss-node-sass": "^2.1.8",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
